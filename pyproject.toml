@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "NodeGraphQt"
+dynamic = ["version"]
+authors = [
+    {name = "Johnny Chan"},
+]
+description = "Node graph framework written in PySide2 that can be re-implemented."
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT License"}
+classifiers = [
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.6",
+]
+dependencies = [
+    "Qt.py>=1.4.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jchanvfx/NodeGraphQt"
+"Documentation" = "https://jchanvfx.github.io/NodeGraphQt/api/index.html"
+"Source" = "https://github.com/jchanvfx/NodeGraphQt/"
+"Tracker" = "https://github.com/jchanvfx/NodeGraphQt/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+exclude = ["examples*"]
+
+[tool.setuptools.package-data]
+"NodeGraphQt" = ["widgets/icons/node_base.png"]
+
+[tool.setuptools.dynamic]
+version = {attr = "NodeGraphQt.pkg_info.__version__"}

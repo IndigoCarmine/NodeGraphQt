@@ -1,0 +1,34 @@
+version = 1
+revision = 3
+requires-python = ">=3.6"
+
+[[package]]
+name = "nodegraphqt"
+source = { editable = "." }
+dependencies = [
+    { name = "qt-py" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "qt-py", specifier = ">=1.4.1" }]
+
+[[package]]
+name = "qt-py"
+version = "1.4.6"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "types-pyside2" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a9/7a/7dfe58082cead77f0600f5244a9f92caab683da99f2a2e36fa24870a41ca/qt_py-1.4.6.tar.gz", hash = "sha256:d26f808a093754f0b44858745965bab138525cffc77c1296a3293171b2e2469f", size = 57847, upload-time = "2025-05-13T04:21:08.36Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/bc/0d/3486a49ee1550b048a913fe2004588f84f469714950b073cbf2261d6e349/qt_py-1.4.6-py2.py3-none-any.whl", hash = "sha256:1e0f8da9af74f2b3448904fab313f6f79cad56b82895f1a2c541243f00cc244e", size = 42358, upload-time = "2025-05-13T04:21:06.657Z" },
+]
+
+[[package]]
+name = "types-pyside2"
+version = "5.15.2.1.7"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/18/b9/b9691abe89b0dd6f02e52604dda35112e202084970edf1515eba22e45ab8/types_pyside2-5.15.2.1.7.tar.gz", hash = "sha256:1d65072deb97481ad481b3414f94d02fd5da07f5e709c2d439ced14f79b2537c", size = 539112, upload-time = "2024-03-11T19:17:12.962Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c1/19/b093a69c7964ab9abea8130fc4ca7e5f1f0f9c19433e53e2ca41a38d1285/types_pyside2-5.15.2.1.7-py2.py3-none-any.whl", hash = "sha256:a7bec4cb4657179415ca7ec7c70a45f9f9938664e22f385c85fd7cd724b07d4d", size = 572176, upload-time = "2024-03-11T19:17:11.079Z" },
+]
