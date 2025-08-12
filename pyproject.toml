@@ -18,6 +18,7 @@ classifiers = [
     "Programming Language :: Python :: 3.6",
 ]
 dependencies = [
+    "packaging>=21.3",
     "Qt.py>=1.4.1",
 ]
 
